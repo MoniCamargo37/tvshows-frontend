@@ -1,3 +1,156 @@
-.active {
-  color: green;
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 30px ;
+  margin-top: 0;
+  width: 100%;
+  gap: 55px;
+  list-style-type: none;
+}
+
+.nav_link {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav_link:hover {
+  background-color: #ddd;
+}
+.homeH2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.homeH2 {
+  font-size: 24px;
+  font-weight: 900;
+  color:#333333;
+}
+.homeShow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px;
+}
+
+.cardShow {
+  width: 300px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cardShow img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333333;
+}
+
+
+.showDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+.showDetails button {
+  margin-top: 15px;
+  width: 100px;
+  height: 30px;
+  background-color: #4393f5;
+  border-color: #f2f2f2;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.editShow, .newShow {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.editShow h2, .newShow h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.editShow form, .newShow form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.editShow label, .newShow label {
+  flex-basis: 100%;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.editShow input, .editShow textarea, .newShow input, .newShow textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.editShow button, .newShow button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.editShow button:hover, .newShow button:hover {
+  background-color: #666;
+}
+
+@media screen and (max-width: 600px) {
+  .editShow form label, .newShow form label {
+    flex-basis: 100%;
+  }
+  
+  .editShow input, .editShow textarea, .newShow input, .newShow textarea {
+    width: 100%;
+  }
 }

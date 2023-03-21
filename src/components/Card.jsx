@@ -1,8 +1,22 @@
-import React from 'react'
+import React from 'react';
 
-export default function Card() {
+export default function Card({ show }) {
+  if (!show) {
+    return null; 
+  }
+
+  const { image, title, description, launched, creator, genre } = show;
   return (
-    // Use to display each one of the movies
-    <div>Card</div>
-  )
+    <div className="cardShow">
+      <img src={image} alt={title} />
+      <div className="card-content">
+        <h3>{title}</h3>
+        <p> {creator}</p>
+        <p> {launched}</p>
+        <p>{genre}</p>
+        <p>{description}</p>
+      </div>
+    </div>
+  );
 }
+
